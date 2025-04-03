@@ -25,7 +25,7 @@
     "OWNER_NUMBER": {
       "description": "Your WhatsApp number",
       "required": true,
-      "value": "254743982206"
+      "value": "254104882369"
     },
     "AUTO_READ": {
       "description": "Enable bot to auto-read messages (true/false)",
@@ -35,7 +35,7 @@
     "AUTO_TYPING": {
       "description": "Enable bot to show typing status (true/false)",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
     "AUTO_RECORDING": {
       "description": "Enable bot to show recording status (true/false)",
@@ -70,7 +70,7 @@
     "STATUS_READ_MSG": {
       "description": "Set the message bot sends after viewing a status",
       "required": false,
-      "value": "*Status Seen*"
+      "value": "false"
     },
     "AUTO_BLOCK": {
       "description": "Enable bot to auto-block specific numbers (true/false)",
