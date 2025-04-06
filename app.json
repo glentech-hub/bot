@@ -3,7 +3,7 @@
   "description": "Glen V1 by glen tech save on heroku 100%",
   "logo": "https://files.catbox.moe/2aimfo.jpg",
   "keywords": ["glen tech", "whatsapp-bot", "whatsapp-md-bot"],
-  "repository": "📛📛",
+  "repository": "https://github.com/glentech-hub/bot",
   "stack": "container",
   "env": { 
   
