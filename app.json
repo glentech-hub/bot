@@ -1,9 +1,9 @@
 {
-  "name": "CLOUD Ai",
-  "description": "🚀 CLOUD AI WhatsApp MultiDevice Bot – Your ultimate AI-powered assistant, built in Node.js to revolutionize WhatsApp automation! From smart replies to advanced moderation, experience seamless interaction like never before. 💡✨",
-  "logo": "https://files.catbox.moe/7jt69h.jpg",
-  "keywords": ["BERA-TECH", "whatsapp-bot", "whatsapp-md-bot"],
-  "repository": "https://github.com/DEVELOPER-BERA/CLOUD-AI",
+  "name": "Glen v1",
+  "description": "Glen V1 by glen tech save on heroku 100%",
+  "logo": "https://files.catbox.moe/2aimfo.jpg",
+  "keywords": ["glen tech", "whatsapp-bot", "whatsapp-md-bot"],
+  "repository": "📛📛",
   "stack": "container",
   "env": { 
   
@@ -20,7 +20,7 @@
     "OWNER_NAME": {
       "description": "Your name as the bot owner",
       "required": true,
-      "value": "BRUCE BERA"
+      "value": "Glen"
     },
     "OWNER_NUMBER": {
       "description": "Your WhatsApp number",
