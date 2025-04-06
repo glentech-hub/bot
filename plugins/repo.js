@@ -28,7 +28,7 @@ const repo = async (m, gss) => {
       await gss.sendMessage(
         m.from,
         {
-          image: { url: "https://files.catbox.moe/juroe8.jpg" },
+          image: { url: "https://files.catbox.moe/2aimfo.jpg" },
           caption: formattedInfo,
           contextInfo: {
             mentionedJid: [m.sender],
@@ -36,7 +36,7 @@ const repo = async (m, gss) => {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: "120363354023106228@newsletter",
-              newsletterName: "JawadTechX",
+              newsletterName: "GLEN V1",
               serverMessageId: 143,
             },
           },
@@ -48,7 +48,7 @@ const repo = async (m, gss) => {
       await gss.sendMessage(
         m.from,
         {
-          audio: { url: "https://github.com/XdTechPro/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a" },
+          audio: { url: "https://github.com/glentech-hub/bot/blob/main/GUSII%20ENSE%20Y_OMWANDO(M4A_128K).m4a" },
           mimetype: "audio/mp4",
           ptt: true,
           contextInfo: {
@@ -57,7 +57,7 @@ const repo = async (m, gss) => {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: "120363354023106228@newsletter",
-              newsletterName: "JawadTechX",
+              newsletterName: "GLEN V1",
               serverMessageId: 143,
             },
           },
