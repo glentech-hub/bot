@@ -135,7 +135,7 @@ const menu = async (m, Matrix) => {
 
     // Send audio after sending the menu
     await Matrix.sendMessage(m.from, {
-      audio: { url: '📛📛📛' },
+      audio: { url: 'https://github.com/glentech-hub/bot/blob/main/GUSII%20ENSE%20Y_OMWANDO(M4A_128K).m4a' },
       mimetype: 'audio/mp4',
       ptt: true
     }, { quoted: m });
