@@ -56,7 +56,7 @@ async function downloadSessionData() {
         return false;
     }
 
-    const sessdata = config.SESSION_ID.split("CLOUD-AI~")[1];
+    const sessdata = config.SESSION_ID.split("GLEN")[1];
 
     if (!sessdata || !sessdata.includes("#")) {
         console.error('❌ Invalid SESSION_ID format! It must contain both file ID and decryption key.');
@@ -89,20 +89,20 @@ async function start() {
     try {
         const { state, saveCreds } = await useMultiFileAuthState(sessionDir);
         const { version, isLatest } = await fetchLatestBaileysVersion();
-        console.log(`🤖 JAWAD-MD using WA v${version.join('.')}, isLatest: ${isLatest}`);
+        console.log(`GLEN V1 using WA v${version.join('.')}, isLatest: ${isLatest}`);
         
         const Matrix = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: useQR,
-            browser: ["JAWAD-MD", "safari", "3.3"],
+            browser: ["GLEN", "safari", "3.3"],
             auth: state,
             getMessage: async (key) => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id);
                     return msg.message || undefined;
                 }
-                return { conversation: " cloid ai whatsapp user bot" };
+                return { conversation: " glen whatsapp user bot" };
             }
         });
 
@@ -114,24 +114,24 @@ Matrix.ev.on('connection.update', (update) => {
         }
     } else if (connection === 'open') {
         if (initialConnection) {
-            console.log(chalk.green("Connected Successfully cloud Ai 🤍"));
+            console.log(chalk.green("Connected Successfully glen v1"));
             Matrix.sendMessage(Matrix.user.id, { 
-                image: { url: "https://files.catbox.moe/pf270b.jpg" }, 
-                caption: `*Hello there User! 👋🏻* 
+                image: { url: "https://files.catbox.moe/2aimfo.jpg" }, 
+                caption: `*Hi there User! * 
 
-> Simple, Straightforward, But Loaded With Features 🎊. Meet CLOUD-AI WhatsApp Bot.
+> Simple, Straightforward, But Loaded With Features 🎊. Meet GLEN V1 WhatsApp Bot.
 
-*Thanks for using CLOUD AI 🚩* 
+*Thanks for using GLEN 🔥* 
 
-> Join WhatsApp Channel: ⤵️  
-https://whatsapp.com/channel/0029VajJoCoLI8YePbpsnE3q
-
+> Join WhatsApp Channels: ⤵️  
+https://whatsapp.com/channel/0029Vb50Aay5kg77HkqWtC3i
+https://whatsapp.com/channel/0029Vb7pQWM8kyyIfIMbsQ10
 - *YOUR PREFIX:* = ${prefix}
 
 Don't forget to give a star to the repo ⬇️  
-https://github.com/DEVELOPER-BERA/CLOUD-AI
+https://github.com/glentech-hub/bot
 
-> © REGARDS BERA`
+> © REGARDS GLEN`
             });
             initialConnection = false;
         } else {
